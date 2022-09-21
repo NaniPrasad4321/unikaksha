@@ -1,0 +1,91 @@
+#factorial
+
+n=int(input())
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+    if fact==n:
+        print("Yes")
+        break
+else:
+    print("No")
+    
+  
+  
+  
+#sum of two digits
+
+a=int(input())
+sum=0
+while a>0:
+    b=a%10
+    sum=sum+b
+    a=a//10
+print(sum)
+
+
+
+#friendly pair
+
+x=int(input())
+y=int(input())
+sum1=0
+sum2=0
+for i in range(1,x):
+    if(x%i==0):
+        sum1+=i
+        print(sum1)
+for j in range(1,y):
+    if(y%j==0):
+        sum2+=j
+        print(sum2)
+if((sum1)/x)==((sum2)/y):
+    print("friendly pair")
+else:
+    print("not friendly pair")
+    
+    
+    
+  #Harshad number
+    
+    a=int(input())
+sum=0
+while(a>0):
+    b=a%10
+    sum=sum+b
+    a=a//10
+if a% sum==0:
+    print("not Harshad number")
+else:
+    print("Harshad number")
+ 
+ 
+ 
+    
+  #LCM of two numbers
+    
+    n=int(input())
+m=int(input())
+for i in range (1,n*m+1):
+    if i%n==0 and i%m==0:
+        print("LCM of ",n,end=" ")
+        break
+print("and",m,"is",i)
+
+
+
+#Palindrome
+
+a=int(input())
+sum=a
+rev=0
+while a>0:
+    b=a%10
+    rev=rev*10+b
+    a=a//10
+print(rev)
+print(a)
+if sum==rev:
+    print("palindrome")
+else:
+    print("not a palindrome")
